@@ -3,15 +3,14 @@
   justify-content: space-between;
   width: 100%;
   font-size: 1.5em;
-  /* background-color: var(--theme-black); */
+  background-color: var(--theme-black);
   top: 0;
   position: sticky;
-  position: -webkit-sticky;
 }
 
 .navbarHeader{ 
   cursor: pointer;
-  /* color: var(--theme-blue); */
+  color: var(--theme-blue);
   padding-left: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -36,7 +35,7 @@
 
 .navItem a{
   cursor: pointer;
-  /* color: var(--theme-blue); */
+  color: var(--theme-blue);
   font-weight: 600;
   text-decoration: none;
 }

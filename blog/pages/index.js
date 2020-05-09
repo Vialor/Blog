@@ -8,19 +8,19 @@ export default function Home() {
       <title>Vialor's Page | Yiyang Zhou</title>
     </Head>
     <Layout>
-      <div class="greeting">
+      <div className="greeting">
         <p>The Spring of Toronto!</p>
         <hr/>
       </div>
       <div id="about-me">
         <h2>About Me</h2>
-        <div class="intro">
-          <img src="img/utsc_hw.jpg" alt="utsc_hw" class="utsc-hw"/>
-          <div class="self-intro">
+        <div className="intro">
+          <img src="img/utsc_hw.jpg" alt="utsc_hw" className="utsc-hw"/>
+          <div className="self-intro">
             <p>I am Yiyang Zhou, and Vialor is my web-name.
             I am also a second-year Software Engineering Co-op student in University of Toronto. </p>
             <p>Currently interested in Web developing</p>
-            <a href="post/Resume.pdf" class="link">My Resume</a>
+            <a href="post/Resume.pdf" className="link">My Resume</a>
           </div>
         </div>
       </div>
@@ -32,8 +32,8 @@ export default function Home() {
       <div id="contact">
         <h2>Contact</h2>
         <address>
-          <a href="mailto:yiyang.zhou@mail.utoronto.ca" class="link">Email: yiyang.zhou@mail.utoronto.ca</a><br/>
-          <a href="./img/Wechat.jpeg" class="link">WeChat: Vial2000</a><br/>
+          <a href="mailto:yiyang.zhou@mail.utoronto.ca" className="link">Email: yiyang.zhou@mail.utoronto.ca</a><br/>
+          <a href="./img/Wechat.jpeg" className="link">WeChat: Vial2000</a><br/>
         </address>
       </div>
     </Layout>

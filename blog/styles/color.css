@@ -1,0 +1,8 @@
+:root{
+    --theme-light-orange: rgb(237, 161, 132);
+    --theme-orange: rgb(255, 123, 0);
+    --theme-dark-orange: rgb(235, 115, 67);
+    --theme-blue: rgb(35, 101, 201);
+    --theme-beige: rgb(232, 233, 216);
+    --theme-black: #343a40;
+}
