@@ -1,0 +1,10 @@
+.backtotop{
+    position: fixed;
+    display: none;
+    bottom: 40px;
+    right: 40px;
+}
+.backtotop:hover{
+    cursor: pointer;
+    bottom: 42px;
+}

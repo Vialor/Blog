@@ -8,9 +8,9 @@ export default class Navbar extends React.Component{
             <nav className={styles.navbar}>
                 <a className={styles.navbarHeader} href="index">Vialor's Page</a>
                 <ul className={styles.nav}>
-                    <li className={styles.navItem}><Link href="math"><a className="nav-link">Math</a></Link></li>
-                    <li className={styles.navItem}><Link href="cs"><a className="nav-link">CS</a></Link></li>
-                    <li className={styles.navItem}><Link href="fun"><a className="nav-link">Fun</a></Link></li>
+                    <li className={styles.navItem}><Link href="math"><a className="navLink">Math</a></Link></li>
+                    <li className={styles.navItem}><Link href="cs"><a className="navLink">CS</a></Link></li>
+                    <li className={styles.navItem}><Link href="fun"><a className="navLink">Fun</a></Link></li>
                 </ul>
             </nav>
         );
