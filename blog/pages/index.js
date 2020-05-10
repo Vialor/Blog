@@ -1,13 +1,12 @@
 import Head from 'next/head'
-import Layout from '../components/Layout.js'
+import Layout, {title} from '../components/layout'
 
-export default function Home() {
+export default function Home({ allPostsData }) {
   return (
-    <>
-    <Head>
-      <title>Vialor's Page | Yiyang Zhou</title>
-    </Head>
     <Layout>
+    <Head>
+      <title>{title}</title>
+    </Head>
       <div className="greeting">
         <p>The Spring of Toronto!</p>
         <hr/>
@@ -36,6 +35,5 @@ export default function Home() {
           <a href="./img/Wechat.jpeg" className="link">WeChat: Vial2000</a><br/>
         </address>
       </div>
-    </Layout>
-  </>);
+    </Layout>);
 }

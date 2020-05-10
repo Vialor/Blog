@@ -1,7 +1,31 @@
-import Layout from '../components/Layout.js'
+import Layout from '../components/layout.js'
+import { getSortedPostsData } from '../lib/readMD'
 
-export default function Home() {
+export default function Home({ allPostsData }) {
   return (
-    <Layout/>
+    <Layout>
+      <section>
+        <ul>
+          {allPostsData.map(({ id, date, title }) => (
+            <li key={id}>
+              {title}
+              <br />
+              {id}
+              <br />
+              {date}
+            </li>
+          ))}
+        </ul>
+      </section>
+    </Layout>
   )
+}
+
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
 }
