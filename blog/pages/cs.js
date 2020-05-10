@@ -1,22 +1,29 @@
-import Layout from '../components/layout.js'
+import Link from 'next/link'
+import Head from 'next/head'
+import Layout, { title } from '../components/layout'
+import Date from '../components/date'
 import { getSortedPostsData } from '../lib/readMD'
+import utilStyles from '../styles/utils.module.css'
 
 export default function Home({ allPostsData }) {
   return (
     <Layout>
-      <section>
-        <ul>
+      <Head>
+      <title>{title}</title>
+      </Head>
+      <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
-            <li key={id}>
-              {title}
+            <li className={utilStyles.listItem} key={id}>
+              <Link href="/cs/[id]" as={`/cs/${id}`}>
+                <a>{title}</a>
+              </Link>
               <br />
-              {id}
-              <br />
-              {date}
+              <small className={utilStyles.lightText}>
+                <Date dateString={date} />
+              </small>
             </li>
           ))}
         </ul>
-      </section>
     </Layout>
   )
 }

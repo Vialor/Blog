@@ -34,15 +34,5 @@
 }
 
 .navItem a{
-  cursor: pointer;
-  color: var(--theme-blue);
   font-weight: 600;
-  text-decoration: none;
-}
-
-.navbarHeader:hover, .navItem a:hover{
-  color: var(--theme-orange);
-  -webkit-transition: color 200ms;
-  -o-transition: color 200ms;
-  transition: color 200ms;
 }

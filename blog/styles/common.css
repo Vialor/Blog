@@ -7,4 +7,14 @@ body{
 
 a{
     text-decoration: none;
+    font-style: normal;
+    cursor: pointer;
+    color: var(--theme-blue);
+}
+
+a:hover{
+    color: var(--theme-orange);
+    -webkit-transition: color 200ms;
+    -o-transition: color 200ms;
+    transition: color 200ms;
 }
