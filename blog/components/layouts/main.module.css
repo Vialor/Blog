@@ -1,0 +1,55 @@
+.backtotop{
+    position: fixed;
+    display: none;
+    width: 30px;
+    bottom: 40px;
+    right: 40px;
+}
+
+.backtotop:hover{
+    cursor: pointer;
+    bottom: 42px;
+}
+
+/* sidebar */
+.sideBar{
+    width: 20%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px lightslategray;
+    background-color: var(--theme-light-orange);
+}
+
+.sidePic{
+    margin: 15%;
+    width:70%;
+    border: 1px solid;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,1);
+}
+
+.listItem{
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+}
+
+.sideBar .back{
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+}
+
+.listItem:hover{
+    background-color: var(--theme-dark-orange);
+    color: var(--theme-blue);
+    text-decoration: none;
+    -webkit-transition: color 200ms;
+    -o-transition: color 200ms;
+    transition: color 200ms;
+    cursor: pointer;
+}

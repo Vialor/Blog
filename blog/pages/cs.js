@@ -1,16 +1,12 @@
 import Link from 'next/link'
-import Head from 'next/head'
-import Layout, { title } from '../components/layout'
+import CSLayout from '../components/layouts/cs'
 import Date from '../components/date'
 import { getSortedPostsData } from '../lib/readMD'
 import utilStyles from '../styles/utils.module.css'
 
-export default function Home({ allPostsData }) {
+function CS({ allPostsData }) {
   return (
-    <Layout>
-      <Head>
-      <title>{title}</title>
-      </Head>
+    <>
       <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
@@ -23,9 +19,9 @@ export default function Home({ allPostsData }) {
               </small>
             </li>
           ))}
-        </ul>
-    </Layout>
-  )
+      </ul>
+    </>
+  );
 }
 
 export async function getStaticProps() {
@@ -36,3 +32,6 @@ export async function getStaticProps() {
     }
   }
 }
+
+CS.layout = CSLayout;
+export default CS;

@@ -1,13 +1,13 @@
 import Head from 'next/head'
-import Layout from '../../components/layout'
+import CSLayout from '../../components/layouts/cs'
 import Date from '../../components/date'
 import { getAllPostIds, getPostData } from '../../lib/readMD'
 
 import utilStyles from '../../styles/utils.module.css'
 
-export default function Post({ postData }) {
+function Post({ postData }) {
   return (
-    <Layout>
+    <>
     <Head>
         <title>{postData.title}</title>
     </Head>
@@ -19,7 +19,7 @@ export default function Post({ postData }) {
     <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       
     </article>
-    </Layout>
+    </>
   );
 }
 
@@ -38,4 +38,7 @@ export async function getStaticProps({ params }) {
         postData
       }
     }
-  }
+}
+
+Post.Layout = CSLayout;
+export default Post;

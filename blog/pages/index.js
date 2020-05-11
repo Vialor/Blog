@@ -1,17 +1,16 @@
 import Head from 'next/head'
-import Layout, {title} from '../components/layout'
+import HomeLayout from '../components/layouts/home'
 
-export default function Home() {
-  return (
-  <Layout>
+const Home = ()=>(
+    <>
     <Head>
-    <title>{title}</title>
+    <title></title>
     </Head>
     <div className="greeting">
       <p>New Year New Blog!</p>
       <hr/>
     </div>
-    <div className="about-me">
+    <div id="about-me">
       <h2>About Me</h2>
       <div className="intro">
         <img src="/static/img/utsc_hw.jpg" alt="utsc_hw" className="utsc-hw"/>
@@ -23,12 +22,12 @@ export default function Home() {
         </div>
       </div>
     </div>
-    <div className="about-blog">
+    <div id="about-blog">
       <h2>About This Blog</h2>
       <p>Uploaded my first year note, resources for web developing and some projects I am working on.</p>
       <p>Do check out JS cool stuff!</p>
     </div>
-    <div className="contact">
+    <div id="contact">
       <h2>Contact</h2>
       <address>
         <a href="mailto:yiyang.zhou@mail.utoronto.ca">Email: yiyang.zhou@mail.utoronto.ca</a><br/>
@@ -71,6 +70,8 @@ export default function Home() {
         }
       }
       `}</style>
-      </Layout>
+      </>
   );
-}
+
+Home.Layout = HomeLayout;
+export default Home;

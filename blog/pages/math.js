@@ -1,8 +1,7 @@
-import Layout from '../components/layout.js'
+import Mathlayout from '../components/layouts/math'
 
-export default function Home() {
-  return (
-    <Layout>
+const Math = () =>(
+  <>
       <iframe src="/static/pdf/Calculus.pdf" id="my-frame" height="100%" width="100%">
         Your Browser Does Not Support PDF, Please Download This File: 
       <a href="/static/pdf/LinearAlgebra.pdf" id="math-pdf-download">Download PDF</a></iframe>
@@ -14,6 +13,8 @@ export default function Home() {
           box-shadow: 0 0 5px lightslategray;
         }`
       }</style>
-    </Layout>
-  );
-}
+  </>
+);
+
+Math.Layout = Mathlayout;
+export default Math;
