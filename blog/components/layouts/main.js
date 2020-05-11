@@ -10,6 +10,7 @@ export default function MainLayout({children}){
     <link rel="icon" 
       type="image/png" 
       href="/static/img/avatar.ppm"/>
+    <title>Vialor's Page | Yiyang Zhou</title>
     </Head>
     <Navbar/>
     {children}

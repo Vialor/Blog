@@ -1,5 +1,3 @@
-import DefaultLayout from '../components/layouts/default'
-
 const Fun = ()=>(
   <>
   <h1>JS Cool Stuff</h1>
@@ -37,5 +35,5 @@ const Fun = ()=>(
   }`}</style>
   </>
   );
-Fun.Layout = DefaultLayout;
+
 export default Fun;

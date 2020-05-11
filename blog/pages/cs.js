@@ -4,7 +4,7 @@ import Date from '../components/date'
 import { getSortedPostsData } from '../lib/readMD'
 import utilStyles from '../styles/utils.module.css'
 
-function CS({ allPostsData }) {
+export default function CS({ allPostsData }) {
   return (
     <>
       <ul className={utilStyles.list}>
@@ -34,4 +34,4 @@ export async function getStaticProps() {
 }
 
 CS.layout = CSLayout;
-export default CS;
+
