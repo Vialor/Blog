@@ -1,0 +1,39 @@
+.content-sec{
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+  }
+  
+  .greeting{
+    text-align: center;
+  }
+  
+  .intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .utsc-hw{
+    width: 45%;
+    box-shadow: 0 0 5px rgba(0,0,0,1);
+  }
+  
+  .self-intro{
+    width:50%;
+  }
+  
+  @media only screen and (max-width: 600px){
+    .intro{
+      flex-direction: column;
+    }
+  
+    .utsc-hw{
+      width: 100%;
+      box-shadow: 0 0 5px rgba(0,0,0,1);
+    }
+    
+    .self-intro{
+      width:100%;
+    }
+  }
