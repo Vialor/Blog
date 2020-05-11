@@ -1,3 +1,3 @@
-export default function backtotop(){
+export default function Backtotop(){
 	return null;
 }
