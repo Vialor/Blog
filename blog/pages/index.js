@@ -31,7 +31,7 @@ const Home = ()=>(
       <h2>Contact</h2>
       <address>
         <a href="mailto:yiyang.zhou@mail.utoronto.ca">Email: yiyang.zhou@mail.utoronto.ca</a><br/>
-        <a href="../public/img/Wechat.jpeg">WeChat: Vial2000</a><br/>
+        <a href="/static/img/Wechat.jpeg">WeChat: Vial2000</a><br/>
       </address>
     </div>
     
