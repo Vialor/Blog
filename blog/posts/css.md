@@ -3,6 +3,8 @@ title: 'CSS'
 date: '2020-05-11'
 ---
 
+# CSS
+
 - Core Topics
 
   - Selector and Pseudo-Selector
@@ -56,7 +58,10 @@ date: '2020-05-11'
 
   - SVG
 
-  - Transition
+  - Transition & Animation:
+
+    - https://www.cnblogs.com/xiaohuochai/p/5347930.html
+    - https://www.cnblogs.com/xiaohuochai/p/5391663.html
 
 ---
 
