@@ -2,7 +2,7 @@ const Fun = ()=>(
   <>
   <h1>JS Cool Stuff</h1>
   <div className="js-cool-stuff fun-project">
-    <img className="project-image" src="/static/img/fun/js.png" href="http://github.com/Vialor/JS-cool-stuff" alt="js"/>
+    <a href="http://github.com/Vialor/JS-cool-stuff"><img className="project-image" src="/static/img/fun/js.png" alt="js"/></a>
     <div className="project-intro">
       <p> A github repository to try out some cool JavaScript and CSS (mainly) ideas, including a
         simple piano, 2048 game, timer and more.</p>
@@ -11,7 +11,7 @@ const Fun = ()=>(
   </div>
   <h1>Planes</h1>
   <div className="planes fun-project">
-    <img className="project-image" src="/static/img/fun/planes.png" href="https://github.com/Vialor/Planes" alt="planes"/>
+    <a href="https://github.com/Vialor/Planes"><img className="project-image" src="/static/img/fun/planes.png" alt="planes"/></a>
     <div className="project-intro">
       <p> A simple plane game made with pygame.</p>
       <p> You need both python3 and pygame to run this game.</p>

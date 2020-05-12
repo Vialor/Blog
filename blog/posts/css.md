@@ -87,4 +87,6 @@ Strongly recommend Youtuber "Coding Startup"  if you can understand Mandarin/Can
 
   http://zhongguose.com/ Chinese colors
 
+  https://www.sj520.cn/tools/jianbian/ gradient design
+
   https://daneden.github.io/animate.css/ animate.css
