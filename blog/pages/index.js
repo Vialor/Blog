@@ -7,7 +7,8 @@ const Home = ()=>(
     <title></title>
     </Head>
     <div className="greeting">
-      <p>New Year New Blog!</p>
+      <p>True courage is to show your vulnerability rather than hide it.</p>
+      <p>People define you the way you define yourself.</p>
       <hr/>
     </div>
     <div id="about-me">
