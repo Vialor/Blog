@@ -7,8 +7,14 @@ const Home = ()=>(
     <title></title>
     </Head>
     <div className="greeting">
-      <p>True courage is to show your vulnerability rather than hide it.</p>
-      <p>People define you the way you define yourself.</p>
+      <pre>
+         __   __    _               _    
+         \ \ / /   (_)    __ _     | |   
+          \ V /    | |   / _` |    | |   
+          _\_/_   _|_|_  \__,_|   _|_|_  
+        _| """"|_|"""""|_|"""""|_|"""""| 
+        "`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-' 
+      </pre>
       <hr/>
     </div>
     <div id="about-me">
