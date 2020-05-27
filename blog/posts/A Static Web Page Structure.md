@@ -1,64 +1,70 @@
 ---
 title: 'A Static Web Page Structure'
-date: '2020-05-17'
+date: '2020-05-27'
 ---
 
-# Git
+# A Static Web Page Structure
 
-https://learngitbranching.js.org/
+index.html
 
-git init
+otherhtmlpage.html
 
+js/
 
+css/
 
-#### Information
-
-git status
-
-git config --list
-
-git branch (-a)
+assets/
 
 
 
-#### Basic Operations
+### Details
 
-git commit -m "[message]"
+#### css/
 
-git checkout [hash/HEAD^/HEAD~[#]]
+##### index.css/otherhtmlpage.css
 
+specifc css file for each page
 
-
-git branch [new branch]
-
-git rebase [A]: merge by put HEAD after A
-
-git merge [A]: merge A and HEAD by creating a new node
+`@import common.css`
 
 
 
-git checkout -b [new branch]: create and switch to new branch
+##### common.css
 
-git branch -f [A] [B]: move branch A to B
+change default css (like h1, footer, input, a and etc)
 
-git branch -d [A]: delete ranch A
-
-
-
-git reset [A]: go back to A (lose history, local)
-
-git revert [A]: go back to A (keep history with new node, remote)
-
-
-
-#### Good to Know
-
-git cherry-pick A B C ...: copy A B C ... after HEAD (create a new branch if necessary)
-
-git rebase -i HEAD~[#]: cherry pick with a UI
+```css
+@import 'global-var.css';
+@import 'component.css';
+/* @import 'normalize.css' */
+@media only screen and (min-width:600px){ /* responsive layout */
+  /* css code */
+} 
+```
 
 
+##### global-var.css
 
-#### Remote Repository
+Global variables
 
-git push -u [origin name] [branch name]
+```css
+:root{
+  --some-global-var: value;
+}
+```
+
+
+
+##### component.css
+
+common components like navbar, sidebar...
+
+
+
+#### assets/
+
+img/
+
+pdf/
+
+...

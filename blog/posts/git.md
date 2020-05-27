@@ -61,4 +61,11 @@ git rebase -i HEAD~[#]: cherry pick with a UI
 
 #### Remote Repository
 
+git remote add origin [repository url]
+
 git push -u [origin name] [branch name]
+
+git pull origin master
+
+git clone [repository url]
+
